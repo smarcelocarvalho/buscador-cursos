@@ -1,0 +1,12 @@
+{
+    "name": "smarcelocarvalho/buscador-cursos",
+    "description": "Buscador desenvolvido no curso de composer da alura.",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Marcelo Carvalho",
+            "email": "marcelo_scarvalho@outlook.com"
+        }
+    ],
+    "require": {}
+}
