@@ -8,6 +8,7 @@ Utilização do composer para instalação de bibliotecas:
 - symfony/css-selctor
 
 <p align="justify"> Separação de classes em arquivos com namespace definido, fazendo uso de PSR-4 em autoload do arquivo composer.json. </p>
+
 ### COMANDOS
 - composer init
 - composer require (pacote)
