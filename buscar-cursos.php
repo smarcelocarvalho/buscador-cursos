@@ -1,21 +1,24 @@
 <?php
 
 require 'vendor/autoload.php';
+// composer dumpautoload (Atualiza as classes inseridas no composer.json em autoload)
+// Possivel utilizar classmap para classes fora de namespaces (classmap e ps-4 para classes em namespaces)
 
+use Alura\BuscadorDeCursos\Buscador;
 use GuzzleHttp\Client;
 use Symfony\Component\DomCrawler\Crawler;
 
 $client = new Client(['verify' => false]);
-$resposta = $client->request('GET','https://cursos.alura.com.br/category/programacao/php');
-
-$html = $resposta->getBody();
-
 $crawler = new Crawler();
-$crawler->addHtmlContent($html);
 
-$cursos = $crawler->filter('span.course-card__name');
+$buscador = new Buscador($client, $crawler);
+$cursos = $buscador->buscar("https://manifestotech.org/");
 
 foreach ($cursos as $curso):
-    echo $curso->textContent . PHP_EOL;
+    echo $curso . PHP_EOL;
 endforeach;
+
+?>
+
+
 
