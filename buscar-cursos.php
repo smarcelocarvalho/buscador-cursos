@@ -2,7 +2,7 @@
 
 require 'vendor/autoload.php';
 // composer dumpautoload (Atualiza as classes inseridas no composer.json em autoload)
-// Possivel utilizar classmap para classes fora de namespaces (classmap e ps-4 para classes em namespaces)
+// Possivel utilizar classmap para classes fora de namespaces (classmap e psr-4 para classes em namespaces)
 
 use Alura\BuscadorDeCursos\Buscador;
 use GuzzleHttp\Client;
