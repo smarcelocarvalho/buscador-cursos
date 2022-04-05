@@ -10,8 +10,8 @@
     ],
     "require": {
         "guzzlehttp/guzzle": "^7.4",
-        "symfony/dom-crawler": "4.2",
-        "symfony/css-selector": "^5.4"
+        "symfony/dom-crawler": "^4.2",
+        "symfony/css-selector": "^4.2"
     },
     "autoload": {
         "files": ["./functions.php"],
@@ -40,5 +40,7 @@
     },
     "scripts-descriptions": {
         "check": "Roda as verificações do código. PHAN PHPCS PHPUNIT"
-    }
+    },
+    "license": "GPL-3.0",
+    "bin": ["buscar-cursos.php"]
 }
