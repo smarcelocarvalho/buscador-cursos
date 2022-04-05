@@ -15,3 +15,4 @@ Utilização do composer para instalação de bibliotecas:
 - composer install (verifica arquivo composer.lock)
 - composer update  (recomendado pois verifica arquivo composer.json, atualiza .lock e .json)
 - composer dumpautoad (Atualiza as classes nomeadas no autoload de composer.json)
+- composer (nome-script)
