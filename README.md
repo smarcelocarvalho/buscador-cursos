@@ -7,7 +7,7 @@ Utilização do composer para instalação de bibliotecas:
 - symfony/dom-crawler
 - symfony/css-selctor
 
-<p align="justify"> Separação de classes em arquivos com namespace definido, fazendo uso de PSR-4 em autoload do arquivo composer.json. </p>
+<p align="justify"> Separação de classes em arquivos com namespace definido, fazendo uso de PSR-4 em autoload do arquivo composer.json. Utilização de classmap para classes que não fazem uso de psr e file para .php que não se enquadram em classes. </p>
 
 ### COMANDOS
 - composer init
